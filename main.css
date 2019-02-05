@@ -1,0 +1,48 @@
+body {
+  background-color: #333;
+  color: #fff;
+}
+nav.navbar {
+  border-bottom: #f44 solid 3px;
+  opacity: 0.9;
+}
+header#home-section {
+  background: url("src/img/bg.jpg") no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header#home-section .dark-overlay {
+  background-color: rgba(0,0,0,0.7);
+}
+header#home-section .dark-overlay .home-inner {
+  padding: 150px;
+}
+section img#phone-img {
+  width: 204.6px;
+  height: 352.2px;
+}
+@media (max-width: 992px) {
+  .home-inner {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    background-color: #f00;
+  }
+  section .phone {
+    position: relative;
+  }
+  section .phone #phone-img {
+    width: 409.2px;
+    height: 704.4px;
+  }
+  section .phone-inner {
+    position: absolute;
+    width: 409.2px;
+    left: 50%;
+    margin-left: -204.6px;
+    padding: 120px 70px 0 70px;
+  }
+}
